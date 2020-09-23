@@ -1,15 +1,5 @@
-import React, { Dispatch, SetStateAction, useContext } from 'react';
-
-export type Response = {
-  show: string;
-  total_results: number;
-  results: {}[];
-};
-
-export type SearchContextType = {
-  results: Response;
-  setResults: Dispatch<SetStateAction<Response>>;
-};
+// eslint-disable-next-line
+import React, { useContext } from 'react';
 
 export function createCtx<SearchContextType>() {
   const ctx = React.createContext<SearchContextType | undefined>(undefined);

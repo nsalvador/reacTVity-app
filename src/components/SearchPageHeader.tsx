@@ -2,7 +2,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-import { Response, createCtx, SearchContextType } from '../context/search';
+import { createCtx } from '../context/search';
+
+import { SearchContextType, Response } from '../types';
 
 const SearchPageHeader = () => {
   const [show, setShow] = useState('');
@@ -21,6 +23,7 @@ const SearchPageHeader = () => {
       setShow('');
     }
   };
+
   return (
     <div className="page-header">
       <div className="content-container form-container">
