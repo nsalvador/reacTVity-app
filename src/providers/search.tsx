@@ -5,13 +5,10 @@ import { createCtx } from '../context/search';
 
 import { SearchContextType, Props } from '../types';
 
+export const [useSearchContext, SearchContextProvider] = createCtx<SearchContextType>();
+
 const SearchProvider = ({ children }: Props) => {
   const [results, setResults] = useState({});
-  const [, SearchContextProvider] = createCtx<SearchContextType>();
-
-  useEffect(() => {
-    setResults({});
-  }, []);
 
   return (
     <SearchContextProvider

@@ -2,13 +2,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-import { createCtx } from '../context/search';
-
-import { SearchContextType, Response } from '../types';
+import { useSearchContext } from '../providers/search';
+import { Response } from '../types';
 
 const SearchPageHeader = () => {
   const [show, setShow] = useState('');
-  const [useSearchContext] = createCtx<SearchContextType>();
   const { results, setResults } = useSearchContext();
 
   const onSubmitHandler = async (e: React.FormEvent) => {
