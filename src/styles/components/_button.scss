@@ -1,0 +1,19 @@
+.btn {
+  background: $dark-blue;
+  border: none;
+  border-radius: 4px;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $font-size-small;
+  font-weight: 300;
+  line-height: 1;
+  padding: 8px 20px;
+  text-decoration: none;
+  outline: none;
+}
+
+.btn--outline {
+  background: transparent;
+  border: 1px solid $white;
+}
