@@ -1,5 +1,15 @@
-import React from "react";
+// eslint-disable-next-line
+import React from 'react';
 
-const Dashboard = () => <h1>Dashboard</h1>;
+import Layout from '../components/Layout';
+import DashboardHeader from '../components/DashboardHeader';
+
+const Dashboard = () => {
+  return (
+    <Layout>
+      <DashboardHeader />
+    </Layout>
+  );
+};
 
 export default Dashboard;

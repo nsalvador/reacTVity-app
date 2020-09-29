@@ -1,7 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
+// eslint-disable-next-line
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import "./styles/styles.scss";
-import App from "./components/App";
+import './styles/styles.scss';
+import App from './components/App';
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById('root'));

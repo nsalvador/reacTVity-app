@@ -2,6 +2,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import { signOut } from '../firebase';
+
 const Header = () => {
   return (
     <header className="header">
@@ -10,7 +12,9 @@ const Header = () => {
           <Link className="header__title" to="/dashboard">
             <h1>ReacTVity</h1>
           </Link>
-          <button className="btn btn--outline">Logout</button>
+          <button className="btn btn--outline" onClick={signOut}>
+            Logout
+          </button>
         </div>
       </div>
     </header>

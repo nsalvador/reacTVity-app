@@ -1,8 +1,7 @@
 // eslint-disable-next-line
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
-import { createCtx } from '../context/search';
-
+import { createCtx } from '../functions/context';
 import { SearchContextType, Props } from '../types';
 
 export const [useSearchContext, SearchContextProvider] = createCtx<SearchContextType>();
