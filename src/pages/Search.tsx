@@ -5,14 +5,12 @@ import Layout from '../components/Layout';
 import SearchProvider from '../providers/search';
 import SearchPageHeader from '../components/SearchPageHeader';
 
-const Search: FunctionComponent = () => {
-  return (
-    <Layout>
-      <SearchProvider>
-        <SearchPageHeader />
-      </SearchProvider>
-    </Layout>
-  );
-};
+const Search: FunctionComponent = () => (
+  <Layout>
+    <SearchProvider>
+      <SearchPageHeader />
+    </SearchProvider>
+  </Layout>
+);
 
 export default Search;

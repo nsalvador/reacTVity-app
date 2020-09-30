@@ -1,18 +1,11 @@
 // eslint-disable-next-line
-import React, { FunctionComponent } from 'react';
+import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 
 import { useAuthContext } from '../context/auth';
-import { Props } from '../types';
+import { Props, FunctionComponentType } from '../types';
 
-const PublicRoute = ({
-  component: Component,
-  ...rest
-}: {
-  component: FunctionComponent;
-  path: string;
-  exact: boolean;
-}) => {
+const PublicRoute = ({ component: Component, ...rest }: FunctionComponentType) => {
   const { user } = useAuthContext();
 
   return (

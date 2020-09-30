@@ -1,5 +1,5 @@
 // eslint-disable-next-line
-import React, { FunctionComponent } from 'react';
+import React from 'react';
 
 import Header from './Header';
 import Footer from './Footer';

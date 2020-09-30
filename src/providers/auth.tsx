@@ -7,6 +7,7 @@ import useAuth from '../functions/auth';
 
 const AuthProvider = ({ children }: Props) => {
   const { user } = useAuth();
+
   return <AuthContextProvider value={{ user }}>{children}</AuthContextProvider>;
 };
 

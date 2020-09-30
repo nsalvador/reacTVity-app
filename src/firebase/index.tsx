@@ -23,7 +23,7 @@ export const signInWithPopup = () => {
   firebase.auth().signInWithPopup(googleAuthProvider);
 };
 
-export const onAuthStateChanged = (cb: (user: firebase.User | null) => any) => {
+export const onAuthStateChanged = (cb: (user: firebase.User | null) => any): firebase.Unsubscribe => {
   return firebase.auth().onAuthStateChanged(cb);
 };
 

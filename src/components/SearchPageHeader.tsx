@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-import { useSearchContext } from '../providers/search';
+import { useSearchContext } from '../context/search';
 import { Response } from '../types';
 
 const SearchPageHeader = () => {

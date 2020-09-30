@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction } from 'react';
+import { Dispatch, FunctionComponent, SetStateAction } from 'react';
 import firebase from 'firebase';
 
 export type SearchContextType = {
@@ -23,4 +23,10 @@ export type Props = {
 export type AuthType = {
   initializing: boolean;
   user: firebase.User | null;
+};
+
+export type FunctionComponentType = {
+  component: FunctionComponent;
+  path: string;
+  exact: boolean;
 };
