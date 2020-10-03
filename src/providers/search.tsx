@@ -7,12 +7,15 @@ import { SearchContextProvider } from '../context/search';
 
 const SearchProvider = ({ children }: Props) => {
   const [results, setResults] = useState({});
+  const [error, setError] = useState({});
 
   return (
     <SearchContextProvider
       value={{
         results,
         setResults,
+        error,
+        setError,
       }}
     >
       {children}

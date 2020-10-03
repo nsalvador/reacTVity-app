@@ -4,6 +4,8 @@ import firebase from 'firebase';
 export type SearchContextType = {
   results: {};
   setResults: Dispatch<SetStateAction<{}>>;
+  error: {};
+  setError: Dispatch<SetStateAction<{}>>;
 };
 
 export type AuthContextType = {
